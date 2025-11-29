@@ -1,0 +1,339 @@
+.upload-files-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.upload-files-upload-files {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.upload-files-rectangle9 {
+  top: 0px;
+  left: 0px;
+  width: 369px;
+  height: 558px;
+  position: absolute;
+  border-radius: 24px;
+}
+ 
+.upload-files-text10 {
+  top: 19px;
+  left: 35px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.upload-files-group28 {
+  top: 505px;
+  left: 35px;
+  width: 100px;
+  height: 32px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.upload-files-button1 {
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  padding: 16px 12px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(59, 130, 246, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(0, 80, 255, 1);
+}
+ 
+.upload-files-text11 {
+  left: 12px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.upload-files-button2 {
+  gap: 8px;
+  top: 506px;
+  left: 235px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  padding: 16px 12px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(98, 102, 111, 1);
+}
+ 
+.upload-files-text12 {
+  top: 504px;
+  left: 265px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.upload-files-group69 {
+  top: 198px;
+  left: 28px;
+  width: 131px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text13 {
+  top: 12px;
+  left: 33.65137481689453px;
+  color: rgba(0, 0, 0, 1);
+  width: 65px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-group35 {
+  top: 133px;
+  left: 190px;
+  width: 129px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text14 {
+  top: 12px;
+  left: 20.119266510009766px;
+  color: rgba(0, 0, 0, 1);
+  width: 89px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-group34 {
+  top: 197px;
+  left: 190px;
+  width: 129px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text15 {
+  top: 12px;
+  left: 35.50458526611328px;
+  color: rgba(0, 0, 0, 1);
+  width: 64px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-group33 {
+  top: 133px;
+  left: 28px;
+  width: 131px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text16 {
+  top: 12px;
+  left: 20.43119239807129px;
+  color: rgba(0, 0, 0, 1);
+  width: 90px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-group57 {
+  top: 66px;
+  left: 190px;
+  width: 129px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text17 {
+  top: 12px;
+  left: 20.119266510009766px;
+  color: rgba(0, 0, 0, 1);
+  width: 89px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-group36 {
+  top: 66px;
+  left: 28px;
+  width: 131px;
+  height: 41px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 247, 255, 1);
+}
+ 
+.upload-files-text18 {
+  top: 11px;
+  left: 15.62385368347168px;
+  color: rgba(0, 0, 0, 1);
+  width: 90px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 16px;
+}
+ 
+.upload-files-minuscircle1 {
+  top: 75px;
+  left: 129px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-minuscircle2 {
+  top: 207px;
+  left: 289px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-minuscircle3 {
+  top: 77px;
+  left: 289px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-minuscircle4 {
+  top: 144px;
+  left: 289px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-minuscircle5 {
+  top: 207px;
+  left: 129px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-minuscircle6 {
+  top: 144px;
+  left: 129px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+ 
+.upload-files-link {
+  display: contents;
+}
+ 
+.upload-files-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.upload-files-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.upload-files-text19 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

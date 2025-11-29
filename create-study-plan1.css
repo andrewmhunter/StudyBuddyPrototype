@@ -1,0 +1,414 @@
+.create-study-plan1-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.create-study-plan1-create-study-plan1 {
+  width: 100%;
+  height: 277px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.create-study-plan1-rectangle9 {
+  top: 0px;
+  left: 0px;
+  width: 369px;
+  height: 277px;
+  position: absolute;
+  border-radius: 24px;
+}
+ 
+.create-study-plan1-group2 {
+  top: 46px;
+  left: 35px;
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-study-plan1-input1 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-study-plan1-book {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-study-plan1-text10 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-study-plan1-icon1 {
+  width: 10px;
+  height: 5px;
+}
+ 
+.create-study-plan1-text11 {
+  top: 19px;
+  left: 35px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-study-plan1-group28 {
+  top: 218.4375px;
+  left: 260px;
+  width: 100px;
+  height: 50.5625px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-study-plan1-button4 {
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 43.125px;
+  display: flex;
+  padding: 16px 12px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(59, 130, 246, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(0, 80, 255, 1);
+}
+ 
+.create-study-plan1-text12 {
+  top: 4.5625px;
+  left: 36px;
+  color: rgba(255, 255, 255, 1);
+  width: 39px;
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-study-plan1-group58 {
+  top: 163px;
+  left: 13px;
+  width: 340px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-study-plan1-time1 {
+  gap: 10px;
+  top: 0px;
+  left: 245px;
+  display: flex;
+  padding: 6px 11px;
+  position: absolute;
+  align-items: flex-start;
+  border-radius: 100px;
+  background-color: rgba(118, 118, 128, 0.11999999731779099);
+}
+ 
+.create-study-plan1-text13 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  text-align: center;
+  line-height: 22px;
+}
+ 
+.create-study-plan1-dateandtime-collapsed {
+  gap: 6px;
+  top: 0px;
+  left: 0px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  justify-content: flex-end;
+}
+ 
+.create-study-plan1-date {
+  gap: 5px;
+  display: flex;
+  padding: 6px 11px;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+  background-color: rgba(118, 118, 128, 0.11999999731779099);
+}
+ 
+.create-study-plan1-text14 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  text-align: center;
+  line-height: 22px;
+}
+ 
+.create-study-plan1-text15 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  text-align: center;
+  line-height: 22px;
+}
+ 
+.create-study-plan1-time2 {
+  gap: 10px;
+  display: flex;
+  padding: 6px 11px;
+  align-items: flex-start;
+  border-radius: 100px;
+  background-color: rgba(118, 118, 128, 0.11999999731779099);
+}
+ 
+.create-study-plan1-text16 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  text-align: center;
+  line-height: 22px;
+}
+ 
+.create-study-plan1-arrowright {
+  top: 5px;
+  left: 217px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+ 
+.create-study-plan1-segmentedcontrol {
+  top: 112px;
+  left: 22px;
+  width: 301px;
+  height: 31px;
+  display: flex;
+  padding: 4px 8px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  justify-content: center;
+  background-color: rgba(118, 118, 128, 0.11999999731779099);
+}
+ 
+.create-study-plan1-button1 {
+  display: flex;
+  padding: 3px 10px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+}
+ 
+.create-study-plan1-text17 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: center;
+  font-family: SF Pro;
+  font-weight: 500;
+  line-height: 18px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-study-plan1-separator1 {
+  width: 1px;
+  height: auto;
+  opacity: 0.30;
+  align-self: stretch;
+  border-radius: 0.5px;
+}
+ 
+.create-study-plan1-button2 {
+  display: flex;
+  padding: 3px 10px;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  box-sizing: content-box;
+  align-items: center;
+  border-radius: 7px;
+}
+ 
+.create-study-plan1-button5 {
+  width: 103px;
+  height: 23px;
+  display: flex;
+  padding: 3px 10px;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05999999865889549) ;
+  box-sizing: content-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.create-study-plan1-text18 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  z-index: 1;
+  flex-grow: 1;
+  font-size: 14px;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF Pro;
+  font-weight: 600;
+  line-height: 18px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-study-plan1-separator2 {
+  width: 1px;
+  height: auto;
+  opacity: 0.30;
+  align-self: stretch;
+  border-radius: 0.5px;
+}
+ 
+.create-study-plan1-button3 {
+  display: flex;
+  padding: 3px 10px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+}
+ 
+.create-study-plan1-text19 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 14px;
+  font-style: Medium;
+  text-align: center;
+  font-family: SF Pro;
+  font-weight: 500;
+  line-height: 18px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-study-plan1-group59 {
+  top: 217px;
+  left: 13px;
+  width: 240px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-study-plan1-input2 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 15px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-study-plan1-mappin {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-study-plan1-text20 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  text-align: center;
+  line-height: 100%;
+}
+ 
+.create-study-plan1-link {
+  display: contents;
+}
+ 
+.create-study-plan1-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.create-study-plan1-icon2 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.create-study-plan1-text21 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -1,0 +1,461 @@
+.create-account-screen-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.create-account-screen-create-account-screen {
+  width: 100%;
+  height: 852px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.create-account-screen-rectangle2 {
+  top: 0px;
+  left: 0px;
+  width: 393px;
+  height: 852px;
+  position: absolute;
+}
+ 
+.create-account-screen-text10 {
+  top: 91px;
+  left: 92px;
+  color: rgba(0, 0, 0, 1);
+  width: 209px;
+  height: auto;
+  position: absolute;
+  font-size: 36px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-account-screen-text11 {
+  top: 151px;
+  left: 96px;
+  color: rgba(0, 119, 255, 1);
+  width: 202px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-account-screen-text12 {
+  top: 813px;
+  left: 29px;
+  color: rgba(30, 30, 30, 1);
+  width: 335px;
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-account-screen-text13 {
+  font-weight: 400;
+}
+ 
+.create-account-screen-text14 {
+  font-weight: 700;
+}
+ 
+.create-account-screen-text15 {
+  font-weight: 400;
+}
+ 
+.create-account-screen-text16 {
+  font-weight: 700;
+}
+ 
+.create-account-screen-text17 {
+  top: 757px;
+  left: 109px;
+  color: rgba(107, 114, 128, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Istok Web;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.create-account-screen-text18 {
+  color: rgba(107, 114, 128, 1);
+}
+ 
+.create-account-screen-text19 {
+  font-weight: 400;
+}
+ 
+.create-account-screen-rectangle1 {
+  top: 196px;
+  left: 11px;
+  width: 371px;
+  height: 554px;
+  position: absolute;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.001230000052601099) ;
+}
+ 
+.create-account-screen-button {
+  gap: 8px;
+  top: 687px;
+  left: 45px;
+  width: 300px;
+  height: 48px;
+  display: flex;
+  padding: 16px 12px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(59, 130, 246, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(0, 80, 255, 1);
+}
+ 
+.create-account-screen-text21 {
+  color: rgba(245, 245, 245, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-line1 {
+  top: 790px;
+  left: 24px;
+  width: 347px;
+  height: 1px;
+  position: absolute;
+}
+ 
+.create-account-screen-text22 {
+  top: 226px;
+  left: 47px;
+  color: rgba(30, 30, 30, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 139.9999976158142%;
+}
+ 
+.create-account-screen-frame1 {
+  gap: 26px;
+  top: 259px;
+  left: 47px;
+  width: 300px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.create-account-screen-group2 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input1 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-user {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text23 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-group3 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input2 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-calendar {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text24 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-group4 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input3 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-phone {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text25 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-group7 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input4 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-book {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text26 {
+  color: rgba(117, 117, 117, 1);
+  width: 211px;
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-arrowdropdown {
+  width: 24px;
+  height: 24px;
+}
+ 
+.create-account-screen-group5 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input5 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-mail {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text27 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-group6 {
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.create-account-screen-input6 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.create-account-screen-lock {
+  width: 30px;
+  height: 30px;
+}
+ 
+.create-account-screen-text28 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.create-account-screen-link {
+  display: contents;
+}
+ 
+.create-account-screen-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.create-account-screen-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.create-account-screen-text29 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

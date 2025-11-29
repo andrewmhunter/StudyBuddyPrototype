@@ -1,0 +1,194 @@
+.edit-file-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.edit-file-edit-file {
+  width: 100%;
+  height: 232px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.edit-file-edit-file-rectangle {
+  top: 0px;
+  left: 0px;
+  width: 369px;
+  height: 239px;
+  position: absolute;
+  border-radius: 24px;
+}
+ 
+.edit-file-text1 {
+  top: 13px;
+  left: 26px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.edit-file-button {
+  gap: 8px;
+  top: 188px;
+  left: 126px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  padding: 16px 12px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: rgba(0, 80, 255, 1);
+}
+ 
+.edit-file-text2 {
+  top: 187px;
+  left: 152px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 32px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.edit-file-edit-file-name {
+  top: 54px;
+  left: 26px;
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.edit-file-input1 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.edit-file-filetext {
+  width: 30px;
+  height: 30px;
+}
+ 
+.edit-file-text3 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.edit-file-edit-file-design-select-course {
+  top: 125px;
+  left: 26px;
+  width: 300px;
+  height: 46px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.edit-file-input2 {
+  gap: 10px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 8px 16px 8px 10px;
+  overflow: hidden;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(217, 217, 217, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: rgba(243, 243, 243, 1);
+}
+ 
+.edit-file-tag {
+  width: 30px;
+  height: 30px;
+}
+ 
+.edit-file-text4 {
+  color: rgba(117, 117, 117, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.edit-file-arrowdropdown {
+  width: 24px;
+  height: 24px;
+}
+ 
+.edit-file-link {
+  display: contents;
+}
+ 
+.edit-file-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.edit-file-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.edit-file-text5 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://hci-phase-3a-interface-design-8652o6.teleporthq.app/sitemap.xml
