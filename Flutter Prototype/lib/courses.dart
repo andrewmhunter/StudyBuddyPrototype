@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'models.dart';
+import 'package:file_picker/file_picker.dart';
 
 class CoursesPage extends StatelessWidget {
   final List<Course> courses;
@@ -76,7 +77,8 @@ class CoursesPage extends StatelessWidget {
                     final newCourse =
                     await Navigator.of(context).push<Course>(
                       MaterialPageRoute(
-                          builder: (_) => const AddCoursePage()),
+                        builder: (_) => const AddCoursePage(),
+                      ),
                     );
                     if (newCourse != null) {
                       onAddCourse(newCourse);
@@ -135,14 +137,14 @@ class _AddCoursePageState extends State<AddCoursePage> {
       lastDate: now.add(const Duration(days: 365)),
     );
     if (date == null) return;
+
     final time = await showTimePicker(
       context: context,
       initialTime: const TimeOfDay(hour: 9, minute: 0),
     );
     if (time == null) return;
 
-    final dt =
-    DateTime(date.year, date.month, date.day, time.hour, time.minute);
+    final dt = DateTime(date.year, date.month, date.day, time.hour, time.minute);
     setState(() {
       _tests.add(dt);
     });
@@ -156,18 +158,20 @@ class _AddCoursePageState extends State<AddCoursePage> {
       );
       return;
     }
+
     final course = Course(
       id: DateTime.now().millisecondsSinceEpoch.toString(),
       name: '${_codeController.text.trim()} · ${_nameController.text.trim()}',
       code: _codeController.text.trim(),
       semester: 'Fall Semester 2025',
     );
+
     Navigator.of(context).pop(course);
   }
 
   @override
   Widget build(BuildContext context) {
-    final labels = ['M', 'T', 'W', 'T', 'F'];
+    final dayLabels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 
     return Scaffold(
       appBar: AppBar(
@@ -191,12 +195,15 @@ class _AddCoursePageState extends State<AddCoursePage> {
                     const SizedBox(height: 8),
                     _roundedPlainField(_nameController, 'Course Name'),
                     const SizedBox(height: 12),
+
                     const Text('Course Code'),
                     const SizedBox(height: 8),
                     _roundedPlainField(_codeController, 'Course Code'),
                     const SizedBox(height: 16),
+
                     const Text('Lecture Times'),
                     const SizedBox(height: 8),
+
                     Row(
                       children: [
                         Expanded(
@@ -216,24 +223,48 @@ class _AddCoursePageState extends State<AddCoursePage> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 12),
+
+                    const SizedBox(height: 16),
+                    const Text("Lecture Days"),
+                    const SizedBox(height: 8),
+
                     ToggleButtons(
                       isSelected: _selectedDays,
+                      borderRadius: BorderRadius.circular(12),
+                      constraints: const BoxConstraints(minWidth: 60, minHeight: 40),
+
+                      selectedColor: Colors.white,
+                      fillColor: Colors.blue,
+
+                      color: Colors.grey.shade700,
+                      renderBorder: true,
+
                       onPressed: (i) {
                         setState(() {
                           _selectedDays[i] = !_selectedDays[i];
                         });
                       },
-                      borderRadius: BorderRadius.circular(12),
-                      children: labels
-                          .map((d) => Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 6),
-                        child: Text(d),
+                      children: dayLabels
+                          .map((d) => Text(
+                        d,
+                        style: const TextStyle(fontSize: 14),
                       ))
                           .toList(),
                     ),
+
+                    const SizedBox(height: 8),
+
+                    Text(
+                      "Selected: " +
+                          [
+                            for (int i = 0; i < dayLabels.length; i++)
+                              if (_selectedDays[i]) dayLabels[i]
+                          ].join(', '),
+                      style: const TextStyle(fontSize: 12, color: Colors.grey),
+                    ),
+
                     const SizedBox(height: 16),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -245,6 +276,7 @@ class _AddCoursePageState extends State<AddCoursePage> {
                       ],
                     ),
                     const SizedBox(height: 8),
+
                     Column(
                       children: _tests
                           .asMap()
@@ -254,8 +286,7 @@ class _AddCoursePageState extends State<AddCoursePage> {
                           dense: true,
                           contentPadding: EdgeInsets.zero,
                           leading: const Icon(Icons.event),
-                          title:
-                          Text('${entry.value.toLocal()}'.split('.')[0]),
+                          title: Text('${entry.value.toLocal()}'.split('.')[0]),
                           trailing: IconButton(
                             icon: const Icon(Icons.close),
                             onPressed: () {
@@ -271,7 +302,9 @@ class _AddCoursePageState extends State<AddCoursePage> {
                   ],
                 ),
               ),
+
               const SizedBox(height: 16),
+
               Row(
                 children: [
                   Expanded(
@@ -318,8 +351,7 @@ class _AddCoursePageState extends State<AddCoursePage> {
       padding: const EdgeInsets.symmetric(horizontal: 12),
       child: TextField(
         controller: controller,
-        decoration:
-        InputDecoration(border: InputBorder.none, hintText: hint),
+        decoration: InputDecoration(border: InputBorder.none, hintText: hint),
       ),
     );
   }
@@ -377,13 +409,11 @@ class _CourseDetailPageState extends State<CourseDetailPage> {
           children: [
             TextField(
               controller: nameController,
-              decoration:
-              const InputDecoration(labelText: 'File Name'),
+              decoration: const InputDecoration(labelText: 'File Name'),
             ),
             TextField(
               controller: topicController,
-              decoration:
-              const InputDecoration(labelText: 'Topic / Section'),
+              decoration: const InputDecoration(labelText: 'Topic / Section'),
             ),
           ],
         ),
@@ -428,19 +458,20 @@ class _CourseDetailPageState extends State<CourseDetailPage> {
           children: [
             Text(
               _course.name,
-              style:
-              const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 8),
+
             const Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 'Files',
-                style:
-                TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
             ),
+
             const SizedBox(height: 8),
+
             Expanded(
               child: Container(
                 width: double.infinity,
@@ -451,10 +482,11 @@ class _CourseDetailPageState extends State<CourseDetailPage> {
                 ),
                 child: _course.files.isEmpty
                     ? const Center(
-                    child: Text(
-                      'No files uploaded yet.',
-                      style: TextStyle(color: Colors.grey),
-                    ))
+                  child: Text(
+                    'No files uploaded yet.',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                )
                     : ListView.builder(
                   itemCount: _course.files.length,
                   itemBuilder: (context, index) {
@@ -472,7 +504,9 @@ class _CourseDetailPageState extends State<CourseDetailPage> {
                 ),
               ),
             ),
+
             const SizedBox(height: 12),
+
             Row(
               children: [
                 Expanded(
@@ -531,7 +565,9 @@ class _UploadFilesPageState extends State<UploadFilesPage> {
   void _addFile() {
     final name = _newNameController.text.trim();
     if (name.isEmpty) return;
+
     final topic = _newTopicController.text.trim();
+
     setState(() {
       _files.add(StudyFile(name: name, topic: topic));
       _newNameController.clear();
@@ -557,7 +593,9 @@ class _UploadFilesPageState extends State<UploadFilesPage> {
               'These are simulated uploads – no real files needed.',
               style: TextStyle(fontSize: 12, color: Colors.grey),
             ),
+
             const SizedBox(height: 12),
+
             Expanded(
               child: ListView.builder(
                 itemCount: _files.length,
@@ -579,7 +617,9 @@ class _UploadFilesPageState extends State<UploadFilesPage> {
                 },
               ),
             ),
+
             const SizedBox(height: 8),
+
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
@@ -611,7 +651,9 @@ class _UploadFilesPageState extends State<UploadFilesPage> {
                 ],
               ),
             ),
+
             const SizedBox(height: 12),
+
             SizedBox(
               width: double.infinity,
               height: 48,

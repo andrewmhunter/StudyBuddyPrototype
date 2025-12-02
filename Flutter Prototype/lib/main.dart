@@ -38,6 +38,7 @@ class _StudyBuddyAppState extends State<StudyBuddyApp> {
         scaffoldBackgroundColor: const Color(0xFFF5F7FB),
         useMaterial3: false,
       ),
+      // No weird keys, just a normal root
       home: _loggedIn
           ? const MainShell()
           : AuthScreen(onAuthenticated: _handleLoggedIn),
@@ -45,7 +46,6 @@ class _StudyBuddyAppState extends State<StudyBuddyApp> {
   }
 }
 
-/// Main app shell with bottom navigation and shared state
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
 
@@ -57,25 +57,30 @@ class _MainShellState extends State<MainShell> {
   int _currentIndex = 0;
 
   Availability? _availability;
+  late List<Course> _courses;
 
-  final List<Course> _courses = [
-    Course(
-      id: '1',
-      name: 'CSCI 4620U · Human-Computer Interaction',
-      code: 'CSCI 4620U',
-      semester: 'Fall Semester 2025',
-      files: [
-        StudyFile(name: 'Lecture01.pdf', topic: 'Design Lifecycle'),
-        StudyFile(name: 'Lecture02.pdf', topic: 'Design Lifecycle'),
-      ],
-    ),
-    Course(
-      id: '2',
-      name: 'CSCI 3310U · Systems Programming',
-      code: 'CSCI 3310U',
-      semester: 'Fall Semester 2025',
-    ),
-  ];
+  @override
+  void initState() {
+    super.initState();
+    _courses = [
+      Course(
+        id: '1',
+        name: 'CSCI 4620U · Human-Computer Interaction',
+        code: 'CSCI 4620U',
+        semester: 'Fall Semester 2025',
+        files: [
+          StudyFile(name: 'Lecture01.pdf', topic: 'Design Lifecycle'),
+          StudyFile(name: 'Lecture02.pdf', topic: 'Design Lifecycle'),
+        ],
+      ),
+      Course(
+        id: '2',
+        name: 'CSCI 3310U · Systems Programming',
+        code: 'CSCI 3310U',
+        semester: 'Fall Semester 2025',
+      ),
+    ];
+  }
 
   void _setAvailability(Availability avail) {
     setState(() {
@@ -117,8 +122,12 @@ class _MainShellState extends State<MainShell> {
               _setAvailability(result);
             }
           },
+          onStartStudy: () {
+            setState(() => _currentIndex = 3);
+          },
         );
         break;
+
       case 1:
         body = CoursesPage(
           courses: _courses,
@@ -126,15 +135,19 @@ class _MainShellState extends State<MainShell> {
           onUpdateCourse: _updateCourse,
         );
         break;
+
       case 2:
         body = const PlanPage();
         break;
+
       case 3:
         body = const StudyPage();
         break;
+
       case 4:
-        body = const ProgressPage();
+        body = ProgressPage(courses: _courses);
         break;
+
       default:
         body = const SizedBox.shrink();
     }

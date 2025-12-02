@@ -78,16 +78,6 @@ class PlanPage extends StatelessWidget {
                   },
                 ),
               ),
-
-              /// Create plan button
-              SizedBox(
-                width: double.infinity,
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text("Create Plan"),
-                ),
-              ),
             ],
           ),
         ),

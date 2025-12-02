@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'models.dart';
+import 'study.dart'; // <-- KEEPING THIS, OK IF UNUSED
 
 class DashboardPage extends StatelessWidget {
   final Availability? availability;
   final VoidCallback onEditAvailability;
 
+  // ↓↓↓ ADDED THIS (minimal change)
+  final VoidCallback onStartStudy; // <-- ADDED
+
   const DashboardPage({
     super.key,
     required this.availability,
     required this.onEditAvailability,
+    required this.onStartStudy, // <-- ADDED
   });
 
   @override
@@ -45,24 +50,28 @@ class DashboardPage extends StatelessWidget {
                     subtitle: 'Design Lifecycle',
                     when: 'Today',
                     duration: '60 minutes',
+                    context: context,
                   ),
                   _sessionCard(
                     title: 'CSCI 3310U - Final Exam',
                     subtitle: 'Memory Management',
                     when: 'Today',
                     duration: '60 minutes',
+                    context: context,
                   ),
                   _sessionCard(
                     title: 'CSCI 4620U - Final Exam',
                     subtitle: 'Use Case Task Analysis',
                     when: '3 days',
                     duration: '30 minutes',
+                    context: context,
                   ),
                   _sessionCard(
                     title: 'CSCI 3310U - Final Exam',
                     subtitle: 'Banker\'s Algorithm',
                     when: '3 days',
                     duration: '90 minutes',
+                    context: context,
                   ),
                   const SizedBox(height: 24),
                   _sectionHeader('Progress'),
@@ -136,6 +145,7 @@ class DashboardPage extends StatelessWidget {
     required String subtitle,
     required String when,
     required String duration,
+    required BuildContext context,
   }) {
     return Container(
       margin: const EdgeInsets.only(bottom: 8),
@@ -152,8 +162,8 @@ class DashboardPage extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style:
-                  const TextStyle(fontWeight: FontWeight.w600, fontSize: 14),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w600, fontSize: 14),
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -179,19 +189,21 @@ class DashboardPage extends StatelessWidget {
               ],
             ),
           ),
+
+          /// 🔥 MINIMAL CHANGE: call onStartStudy()
           SizedBox(
             height: 36,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: onStartStudy, // <-- CHANGED ONLY THIS
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)),
-                padding:
-                const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 20, vertical: 0),
               ),
               child: const Text('Start'),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -253,8 +265,6 @@ class _StreakCard extends StatelessWidget {
     );
   }
 }
-
-/// Availability page
 
 class AvailabilityPage extends StatefulWidget {
   final Availability? initialAvailability;
